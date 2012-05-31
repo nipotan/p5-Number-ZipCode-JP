@@ -1,5 +1,5 @@
 use strict;
-use Test::More tests => 22682;
+use Test::More tests => 22681;
 
 use_ok('Number::ZipCode::JP', 'company');
 
@@ -5739,7 +5739,6 @@ ok($zip->set_number('1688611')->is_valid_number, '株式会社 アルク');
 ok($zip->set_number('1688616')->is_valid_number, '学校法人 立教女学院');
 ok($zip->set_number('1688626')->is_valid_number, '立教女学院短期大学');
 ok($zip->set_number('1688681')->is_valid_number, '株式会社 アルク');
-ok($zip->set_number('1688685')->is_valid_number, '東京ソフト 株式会社 (TS)');
 ok($zip->set_number('1688686')->is_valid_number, 'サミット 株式会社');
 ok($zip->set_number('1698011')->is_valid_number, '日本通信教育連盟');
 ok($zip->set_number('1698012')->is_valid_number, '東京社会保険事務局');
