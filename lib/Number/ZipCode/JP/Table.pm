@@ -3,7 +3,7 @@ package Number::ZipCode::JP::Table;
 use strict;
 use warnings;
 
-our $VERSION = '0.20130430';
+our $VERSION = '0.20130531';
 
 no warnings 'once';
 
@@ -36,7 +36,7 @@ by Number::ZipCode::JP.
 
 =head1 AUTHOR
 
-Koichi Taniguchi (a.k.a. nipotan) E<lt>taniguchi@livedoor.jpE<gt>
+Koichi Taniguchi (a.k.a. nipotan) E<lt>taniguchi@cpan.orgE<gt>
 
 =head1 LICENSE
 

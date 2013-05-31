@@ -6,7 +6,7 @@ use 5.008_001;
 use Carp;
 use UNIVERSAL::require;
 
-our $VERSION = '0.20130430';
+our $VERSION = '0.20130531';
 our %ZIP_TABLE = ();
 
 sub import {
@@ -197,7 +197,7 @@ returns false if the number is invalid.
 
 =head1 AUTHOR
 
-Koichi Taniguchi (a.k.a. nipotan) E<lt>taniguchi@livedoor.jpE<gt>
+Koichi Taniguchi (a.k.a. nipotan) E<lt>taniguchi@cpan.orgE<gt>
 
 =head1 LICENSE
 
