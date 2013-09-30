@@ -3,9 +3,9 @@ package Number::ZipCode::JP::Table::Company;
 use strict;
 use warnings;
 
-our $VERSION = '0.20130830';
+our $VERSION = '0.20130930';
 
-# Table last modified: 2013-08-30
+# Table last modified: 2013-09-30
 our %ZIP_TABLE = (
     '001' => '(?:8(?:5(?:[02]1|88)|612))',
     '002' => '(?:850[1-4])',
