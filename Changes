@@ -1,5 +1,10 @@
 Revision histories for Perl extension Number::ZipCode::JP
 
+0.20140531  Mon Jun  2 2014
+     - Bug fixed. Previous version breaks compatibility in regexp.
+       (?^...) construct can be used perl 5.14 or later.
+       It's too modern.
+
 0.20140530  Fri May 30 2014
      - Update some table classes.
 

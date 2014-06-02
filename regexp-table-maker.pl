@@ -156,7 +156,7 @@ sub convert_value {
 
 sub compress { # makes regexp more compressed
     my $regexp = shift;
-    $regexp =~ s/^\(\?-xism:/(?:/;
+    $regexp =~ s/^\(\?(?:-xism|\^):/(?:/;
     $regexp =~ s&\(\?:([^\(\)]+)\)&
         my $re = $1;
         my @re = ();
@@ -180,7 +180,7 @@ sub compress { # makes regexp more compressed
             for my $pref (sort @{$suffixes{$suff}}) {
                 $rac->add($pref);
             }
-            (my $pref_class = $rac->re) =~ s/^\(\?-xism:(.*?)\)/$1/;
+            (my $pref_class = $rac->re) =~ s/^\(\?(?:-xism|\^):(.*?)\)/$1/;
             push @re, $pref_class . $suff;
         }
         '(?:' . join('|', @re) . ')';
