@@ -1,5 +1,5 @@
 use strict;
-use Test::More tests => 22823;
+use Test::More tests => 22825;
 
 use_ok('Number::ZipCode::JP', 'company');
 
@@ -683,7 +683,7 @@ ok($zip->set_number('0411192')->is_valid_number, '七飯町役場');
 ok($zip->set_number('0411193')->is_valid_number, '七飯町教育委員会');
 ok($zip->set_number('0411194')->is_valid_number, '七飯町農業協同組合');
 ok($zip->set_number('0411195')->is_valid_number, '函館厚生院 ななえ新病院');
-ok($zip->set_number('0411196')->is_valid_number, '株式会社 ジェイデバイスセミコンダクタ 函館センター');
+ok($zip->set_number('0411196')->is_valid_number, '株式会社 ジェイデバイス 函館地区');
 ok($zip->set_number('0411392')->is_valid_number, '株式会社 プリンスホテル 函館大沼プリンスホテル');
 ok($zip->set_number('0411496')->is_valid_number, '鹿部ロイヤルホテル');
 ok($zip->set_number('0411497')->is_valid_number, '鹿部カントリー倶楽部');
@@ -2220,6 +2220,7 @@ ok($zip->set_number('1018581')->is_valid_number, '(財) ポスタルサービス
 ok($zip->set_number('1018585')->is_valid_number, '山崎製パン 株式会社');
 ok($zip->set_number('1018586')->is_valid_number, '貝印 株式会社');
 ok($zip->set_number('1018588')->is_valid_number, '株式会社 白石');
+ok($zip->set_number('1018603')->is_valid_number, '新生フィナンシャル 株式会社');
 ok($zip->set_number('1018605')->is_valid_number, '橋本産業 (株)');
 ok($zip->set_number('1018606')->is_valid_number, 'フマキラー 株式会社');
 ok($zip->set_number('1018607')->is_valid_number, '三菱文具 株式会社');
@@ -2789,6 +2790,7 @@ ok($zip->set_number('1048133')->is_valid_number, '東京電力 株式会社 銀�
 ok($zip->set_number('1048134')->is_valid_number, 'リコーリース 株式会社');
 ok($zip->set_number('1048135')->is_valid_number, '株式会社 日本香堂');
 ok($zip->set_number('1048138')->is_valid_number, '株式会社 ゼアリズ');
+ok($zip->set_number('1048139')->is_valid_number, '株式会社 紙パルプ会館');
 ok($zip->set_number('1048142')->is_valid_number, '株式会社 ジャパン・エンターテイメント・ネットワーク');
 ok($zip->set_number('1048145')->is_valid_number, '株式会社 ミキモト ミキモトブティック');
 ok($zip->set_number('1048151')->is_valid_number, '東京海上日動火災保険 株式会社');
@@ -3116,6 +3118,7 @@ ok($zip->set_number('1058535')->is_valid_number, 'エヌ・ティ・ティ・コ
 ok($zip->set_number('1058537')->is_valid_number, '阿部電材 株式会社');
 ok($zip->set_number('1058540')->is_valid_number, '日本電気 株式会社 セレスティンビル');
 ok($zip->set_number('1058543')->is_valid_number, '株式会社 朝日工業社');
+ok($zip->set_number('1058544')->is_valid_number, '曹洞宗 宗務庁');
 ok($zip->set_number('1058545')->is_valid_number, '株式会社 長谷工アーベスト');
 ok($zip->set_number('1058546')->is_valid_number, '三菱アルミニウム 株式会社');
 ok($zip->set_number('1058550')->is_valid_number, '礎会館(東京電力労働組合)');
@@ -5084,7 +5087,6 @@ ok($zip->set_number('1538906')->is_valid_number, '株式会社 メルローズ')
 ok($zip->set_number('1538911')->is_valid_number, '東京富士 株式会社');
 ok($zip->set_number('1538913')->is_valid_number, '株式会社 ホワイ');
 ok($zip->set_number('1538914')->is_valid_number, '東京大学大学院 数理科学研究科');
-ok($zip->set_number('1538922')->is_valid_number, 'ウォルト・ディズニー・ジャパン 株式会社');
 ok($zip->set_number('1538923')->is_valid_number, 'サクサ 株式会社');
 ok($zip->set_number('1538925')->is_valid_number, '株式会社 リテイルネットワークス');
 ok($zip->set_number('1538927')->is_valid_number, 'メルク 株式会社');
@@ -6692,8 +6694,6 @@ ok($zip->set_number('2248515')->is_valid_number, '中央大学横浜山手中学
 ok($zip->set_number('2248520')->is_valid_number, 'パナソニック 株式会社 オートモーティブシステムズ社');
 ok($zip->set_number('2248522')->is_valid_number, '株式会社 ソディック');
 ok($zip->set_number('2248524')->is_valid_number, '亀屋万年堂製菓 株式会社');
-ok($zip->set_number('2248530')->is_valid_number, '株式会社 エンジェリーベ');
-ok($zip->set_number('2248533')->is_valid_number, '株式会社 エンジェリーベP&N');
 ok($zip->set_number('2248539')->is_valid_number, 'パナソニックモバイルコミュニケーションズ 株式会社');
 ok($zip->set_number('2248550')->is_valid_number, '日本ヒルティ 株式会社');
 ok($zip->set_number('2248551')->is_valid_number, '東京都市大学 横浜キャンパス');
@@ -6703,7 +6703,6 @@ ok($zip->set_number('2248585')->is_valid_number, '株式会社 図研');
 ok($zip->set_number('2248588')->is_valid_number, '株式会社 AOKIホールディングス');
 ok($zip->set_number('2248686')->is_valid_number, '株式会社 サカタのタネ');
 ok($zip->set_number('2248688')->is_valid_number, '株式会社 AOKI');
-ok($zip->set_number('2248730')->is_valid_number, '株式会社 エンジェリーベ');
 ok($zip->set_number('2258501')->is_valid_number, '株式会社 ジャンボ');
 ok($zip->set_number('2258502')->is_valid_number, '学校法人 桐蔭学園');
 ok($zip->set_number('2258503')->is_valid_number, '桐蔭横浜大学');
@@ -6797,7 +6796,6 @@ ok($zip->set_number('2328515')->is_valid_number, '宗教法人 大山ねずの�
 ok($zip->set_number('2328531')->is_valid_number, '株式会社 ノグチ 横浜支店');
 ok($zip->set_number('2328555')->is_valid_number, '神奈川県立こども医療センター');
 ok($zip->set_number('2328558')->is_valid_number, '馬淵建設 株式会社');
-ok($zip->set_number('2328576')->is_valid_number, '株式会社 キャプティ');
 ok($zip->set_number('2328580')->is_valid_number, '学校法人 横浜英和学院');
 ok($zip->set_number('2328585')->is_valid_number, '横浜南社会保険事務所');
 ok($zip->set_number('2328587')->is_valid_number, '横浜植木 株式会社');
@@ -7841,6 +7839,7 @@ ok($zip->set_number('3058585')->is_valid_number, 'アステラス製薬 株式�
 ok($zip->set_number('3058601')->is_valid_number, '農林水産技術会議事務局 筑波事務所');
 ok($zip->set_number('3058602')->is_valid_number, '独立行政法人 農業生物資源研究所');
 ok($zip->set_number('3058604')->is_valid_number, '独立行政法人 農業環境技術研究所');
+ok($zip->set_number('3058605')->is_valid_number, '農業・食品産業技術総合研究機構 果樹研究所');
 ok($zip->set_number('3058609')->is_valid_number, '独立行政法人 農業・食品産業技術総合研究機構 農村工学研究所');
 ok($zip->set_number('3058642')->is_valid_number, '独立行政法人 食品総合研究所');
 ok($zip->set_number('3058686')->is_valid_number, '国際農林水産業研究センター');
@@ -8511,7 +8510,7 @@ ok($zip->set_number('3448521')->is_valid_number, '春日部女子高等学校');
 ok($zip->set_number('3448522')->is_valid_number, '株式会社 桃屋 春日部工場');
 ok($zip->set_number('3448533')->is_valid_number, '西武 春日部店');
 ok($zip->set_number('3448535')->is_valid_number, '春日部警察署');
-ok($zip->set_number('3448540')->is_valid_number, '栄和 株式会社');
+ok($zip->set_number('3448540')->is_valid_number, '株式会社 G.R.S.');
 ok($zip->set_number('3448555')->is_valid_number, '埼玉県春日部県税事務所');
 ok($zip->set_number('3448566')->is_valid_number, '株式会社 マルヤ');
 ok($zip->set_number('3448577')->is_valid_number, '春日部市役所');
@@ -9254,7 +9253,7 @@ ok($zip->set_number('3808797')->is_valid_number, '株式会社 かんぽ生命 �
 ok($zip->set_number('3808797')->is_valid_number, '日本郵便 株式会社 信越支社');
 ok($zip->set_number('3808798')->is_valid_number, '信越郵政研修センター');
 ok($zip->set_number('3810192')->is_valid_number, '株式会社 丸水長野県水 長野支店');
-ok($zip->set_number('3810193')->is_valid_number, '東日本システム建設 株式会社');
+ok($zip->set_number('3810193')->is_valid_number, '株式会社 TOSYS');
 ok($zip->set_number('3810292')->is_valid_number, '株式会社 竹風堂');
 ok($zip->set_number('3810293')->is_valid_number, '株式会社 小布施堂');
 ok($zip->set_number('3810295')->is_valid_number, '新生病院');
@@ -9288,7 +9287,7 @@ ok($zip->set_number('3818525')->is_valid_number, '株式会社 デンセン');
 ok($zip->set_number('3818530')->is_valid_number, '麻場産業 株式会社');
 ok($zip->set_number('3818539')->is_valid_number, '松田産業 株式会社');
 ok($zip->set_number('3818545')->is_valid_number, '株式会社 クリエイティブヨーコ');
-ok($zip->set_number('3818548')->is_valid_number, '東日本システム建設 株式会社');
+ok($zip->set_number('3818548')->is_valid_number, '株式会社 TOSYS');
 ok($zip->set_number('3818556')->is_valid_number, '長野県 トラック会館');
 ok($zip->set_number('3818558')->is_valid_number, '長野北社会保険事務所');
 ok($zip->set_number('3818560')->is_valid_number, '岡谷酸素 株式会社 長野事業部');
@@ -11260,7 +11259,7 @@ ok($zip->set_number('4608473')->is_valid_number, '新栄県税事務所');
 ok($zip->set_number('4608475')->is_valid_number, '株式会社 名古屋リビング新聞社');
 ok($zip->set_number('4608477')->is_valid_number, '株式会社 ワークスジャパン');
 ok($zip->set_number('4608481')->is_valid_number, '愛知労働金庫');
-ok($zip->set_number('4608482')->is_valid_number, 'ピープルスタッフ 株式会社');
+ok($zip->set_number('4608482')->is_valid_number, 'テンプスタッフ・ピープル 株式会社');
 ok($zip->set_number('4608483')->is_valid_number, '愛知県 名古屋東部県税事務所');
 ok($zip->set_number('4608484')->is_valid_number, '独立行政法人 都市再生機構 中部支社');
 ok($zip->set_number('4608485')->is_valid_number, '株式会社 日本メディカル総研 名古屋支社');
@@ -12713,7 +12712,7 @@ ok($zip->set_number('5148501')->is_valid_number, '伊勢湾飼料畜産 株式�
 ok($zip->set_number('5148502')->is_valid_number, '三重工事事務所');
 ok($zip->set_number('5148503')->is_valid_number, '津地方法務局');
 ok($zip->set_number('5148505')->is_valid_number, '三重エフエム放送 株式会社');
-ok($zip->set_number('5148507')->is_valid_number, '三重大学');
+ok($zip->set_number('5148507')->is_valid_number, '国立大学法人 三重大学');
 ok($zip->set_number('5148508')->is_valid_number, '医療法人 永井病院');
 ok($zip->set_number('5148510')->is_valid_number, '三重刑務所');
 ok($zip->set_number('5148511')->is_valid_number, 'クレハエラストマー 株式会社');
@@ -13521,7 +13520,7 @@ ok($zip->set_number('5598553')->is_valid_number, '株式会社 ロゴスコー�
 ok($zip->set_number('5598555')->is_valid_number, '大阪府 咲洲庁舎');
 ok($zip->set_number('5598558')->is_valid_number, '大阪市水道局');
 ok($zip->set_number('5598559')->is_valid_number, '日立造船 株式会社');
-ok($zip->set_number('5598560')->is_valid_number, '玉出年金事務所');
+ok($zip->set_number('5598560')->is_valid_number, '日本年金機構 玉出年金事務所');
 ok($zip->set_number('5598561')->is_valid_number, '株式会社 グルメ杵屋');
 ok($zip->set_number('5598585')->is_valid_number, '真生印刷 株式会社');
 ok($zip->set_number('5598588')->is_valid_number, 'デジタルプラネット衛星放送');
@@ -13698,6 +13697,7 @@ ok($zip->set_number('5728589')->is_valid_number, '株式会社 横井製作所')
 ok($zip->set_number('5730192')->is_valid_number, '大阪国際大学');
 ok($zip->set_number('5730195')->is_valid_number, '関西外語大学 穂谷学舎');
 ok($zip->set_number('5731001')->is_valid_number, '学校法人 関西外国語大学');
+ok($zip->set_number('5731007')->is_valid_number, '株式会社 KHD');
 ok($zip->set_number('5731010')->is_valid_number, '関西医科大学');
 ok($zip->set_number('5731030')->is_valid_number, '枚方市上下水道局');
 ok($zip->set_number('5731040')->is_valid_number, '(株) 枚方自動車教習所');
@@ -14442,6 +14442,7 @@ ok($zip->set_number('6508533')->is_valid_number, '日本興亜損害保険 株�
 ok($zip->set_number('6508536')->is_valid_number, '株式会社 サンテレビジョン');
 ok($zip->set_number('6508539')->is_valid_number, '神戸親和女子大学 通信教育部事務室');
 ok($zip->set_number('6508543')->is_valid_number, '神戸商工会議所');
+ok($zip->set_number('6508546')->is_valid_number, 'トラスコ中山 株式会社 プラネット神戸');
 ok($zip->set_number('6508550')->is_valid_number, '田崎真珠 株式会社');
 ok($zip->set_number('6508551')->is_valid_number, '第五管区海上保安本部');
 ok($zip->set_number('6508555')->is_valid_number, '株式会社 アシックス');
@@ -15146,7 +15147,7 @@ ok($zip->set_number('7008557')->is_valid_number, '総合病院 岡山市立市�
 ok($zip->set_number('7008558')->is_valid_number, '岡山大学大学院 医歯薬学総合研究科(医学部)、岡山大学病院(医科)');
 ok($zip->set_number('7008560')->is_valid_number, '浅野産業 株式会社');
 ok($zip->set_number('7008561')->is_valid_number, '株式会社 マイカル岡山ビブレ');
-ok($zip->set_number('7008562')->is_valid_number, 'カイタック 株式会社 GM営業部');
+ok($zip->set_number('7008562')->is_valid_number, '株式会社 カイタックトレーディング 問屋町');
 ok($zip->set_number('7008567')->is_valid_number, '社団法人 岡山トラック協会');
 ok($zip->set_number('7008568')->is_valid_number, '岡山県国民健康保険団体連合会');
 ok($zip->set_number('7008569')->is_valid_number, '全労済岡山県本部');
@@ -15837,7 +15838,7 @@ ok($zip->set_number('7338624')->is_valid_number, 'ららぽーとマネジメン
 ok($zip->set_number('7338625')->is_valid_number, '株式会社 アルパーク天満屋');
 ok($zip->set_number('7338626')->is_valid_number, 'アルパーク北棟');
 ok($zip->set_number('7338630')->is_valid_number, '株式会社 奥山商会');
-ok($zip->set_number('7338633')->is_valid_number, '成和産業 株式会社');
+ok($zip->set_number('7338633')->is_valid_number, 'ティーエスアルフレッサ 株式会社');
 ok($zip->set_number('7338641')->is_valid_number, '株式会社 アスティ');
 ok($zip->set_number('7338642')->is_valid_number, '株式会社 ヤマニシ');
 ok($zip->set_number('7338643')->is_valid_number, '加藤産業 株式会社 広島支店');
@@ -16667,6 +16668,7 @@ ok($zip->set_number('7808515')->is_valid_number, '高知県立大学 永国寺�
 ok($zip->set_number('7808516')->is_valid_number, '高知短期大学');
 ok($zip->set_number('7808517')->is_valid_number, '株式会社 サニーマート');
 ok($zip->set_number('7808518')->is_valid_number, '(株) サニーマート 中央流通センター');
+ok($zip->set_number('7808519')->is_valid_number, 'ブルーチップ 高知センター 商品交換受付係');
 ok($zip->set_number('7808520')->is_valid_number, '国立大学法人 高知大学');
 ok($zip->set_number('7808521')->is_valid_number, '四国アルフレッサ 株式会社 高知営業部高知事業所');
 ok($zip->set_number('7808522')->is_valid_number, '医療法人 近森会');
@@ -22081,7 +22083,7 @@ ok(!$zip->set_number('2208766')->is_valid_number, 'checking for 2208766');
 ok(!$zip->set_number('2218799')->is_valid_number, 'checking for 2218799');
 ok(!$zip->set_number('2228653')->is_valid_number, 'checking for 2228653');
 ok(!$zip->set_number('2238687')->is_valid_number, 'checking for 2238687');
-ok(!$zip->set_number('2248731')->is_valid_number, 'checking for 2248731');
+ok(!$zip->set_number('2248689')->is_valid_number, 'checking for 2248689');
 ok(!$zip->set_number('2258586')->is_valid_number, 'checking for 2258586');
 ok(!$zip->set_number('2268571')->is_valid_number, 'checking for 2268571');
 ok(!$zip->set_number('2278541')->is_valid_number, 'checking for 2278541');
