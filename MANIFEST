@@ -1,3 +1,4 @@
+.perl-version
 Changes
 lib/Number/ZipCode/JP.pm
 lib/Number/ZipCode/JP/Table.pm
