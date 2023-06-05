@@ -3,7 +3,7 @@ package Number::ZipCode::JP::Table;
 use strict;
 use warnings;
 
-our $VERSION = '0.20230428';
+our $VERSION = '0.20230531';
 
 no warnings 'once';
 
