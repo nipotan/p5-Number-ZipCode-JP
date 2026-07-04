@@ -1,5 +1,5 @@
 use strict;
-use Test::More tests => 125770;
+use Test::More tests => 125775;
 
 use_ok('Number::ZipCode::JP', 'area');
 
@@ -30354,6 +30354,7 @@ ok($zip->set_number('3410015')->is_valid_number, '埼玉県三郷市前間');
 ok($zip->set_number('3410016')->is_valid_number, '埼玉県三郷市田中新田');
 ok($zip->set_number('3410017')->is_valid_number, '埼玉県三郷市丹後');
 ok($zip->set_number('3410018')->is_valid_number, '埼玉県三郷市早稲田');
+ok($zip->set_number('3410019')->is_valid_number, '埼玉県三郷市彦郷');
 ok($zip->set_number('3410021')->is_valid_number, '埼玉県三郷市さつき平');
 ok($zip->set_number('3410022')->is_valid_number, '埼玉県三郷市大広戸');
 ok($zip->set_number('3410023')->is_valid_number, '埼玉県三郷市仁蔵');
@@ -41086,6 +41087,8 @@ ok($zip->set_number('4440814')->is_valid_number, '愛知県岡崎市羽根町小
 ok($zip->set_number('4440815')->is_valid_number, '愛知県岡崎市羽根町陣場');
 ok($zip->set_number('4440816')->is_valid_number, '愛知県岡崎市羽根町大池');
 ok($zip->set_number('4440817')->is_valid_number, '愛知県岡崎市不吹町');
+ok($zip->set_number('4440818')->is_valid_number, '愛知県岡崎市羽根');
+ok($zip->set_number('4440819')->is_valid_number, '愛知県岡崎市岡崎駅前');
 ok($zip->set_number('4440820')->is_valid_number, '愛知県岡崎市若松西');
 ok($zip->set_number('4440821')->is_valid_number, '愛知県岡崎市庄司田');
 ok($zip->set_number('4440822')->is_valid_number, '愛知県岡崎市若松東');
@@ -41116,6 +41119,7 @@ ok($zip->set_number('4440846')->is_valid_number, '愛知県岡崎市六名新町
 ok($zip->set_number('4440847')->is_valid_number, '愛知県岡崎市六名東町');
 ok($zip->set_number('4440848')->is_valid_number, '愛知県岡崎市向山町');
 ok($zip->set_number('4440849')->is_valid_number, '愛知県岡崎市戸崎新町');
+ok($zip->set_number('4440850')->is_valid_number, '愛知県岡崎市柱東');
 ok($zip->set_number('4440851')->is_valid_number, '愛知県岡崎市久後崎町');
 ok($zip->set_number('4440852')->is_valid_number, '愛知県岡崎市南明大寺町');
 ok($zip->set_number('4440853')->is_valid_number, '愛知県岡崎市三崎町');
@@ -61762,10 +61766,10 @@ ok($zip->set_number('6048831')->is_valid_number, '京都府京都市中京区壬
 ok($zip->set_number('6048832')->is_valid_number, '京都府京都市中京区壬生下溝町');
 ok($zip->set_number('6048841')->is_valid_number, '京都府京都市中京区壬生東土居ノ内町');
 ok($zip->set_number('6048842')->is_valid_number, '京都府京都市中京区壬生土居ノ内町');
-ok($zip->set_number('6048843')->is_valid_number, '京都府京都市中京区壬生東桧町');
-ok($zip->set_number('6048844')->is_valid_number, '京都府京都市中京区壬生桧町');
+ok($zip->set_number('6048843')->is_valid_number, '京都府京都市中京区壬生東檜町');
+ok($zip->set_number('6048844')->is_valid_number, '京都府京都市中京区壬生檜町');
 ok($zip->set_number('6048845')->is_valid_number, '京都府京都市中京区壬生東高田町');
-ok($zip->set_number('6048846')->is_valid_number, '京都府京都市中京区壬生西桧町');
+ok($zip->set_number('6048846')->is_valid_number, '京都府京都市中京区壬生西檜町');
 ok($zip->set_number('6048847')->is_valid_number, '京都府京都市中京区壬生西土居ノ内町');
 ok($zip->set_number('6048851')->is_valid_number, '京都府京都市中京区壬生上大竹町');
 ok($zip->set_number('6048852')->is_valid_number, '京都府京都市中京区壬生東大竹町');
@@ -88661,6 +88665,7 @@ ok($zip->set_number('7991105')->is_valid_number, '愛媛県西条市小松町大
 ok($zip->set_number('7991106')->is_valid_number, '愛媛県西条市小松町大頭');
 ok($zip->set_number('7991107')->is_valid_number, '愛媛県西条市小松町明穂');
 ok($zip->set_number('7991108')->is_valid_number, '愛媛県西条市小松町安井');
+ok($zip->set_number('7991109')->is_valid_number, '愛媛県西条市小松町新宮');
 ok($zip->set_number('7991111')->is_valid_number, '愛媛県西条市小松町石鎚(湯浪)');
 ok($zip->set_number('7991112')->is_valid_number, '愛媛県西条市小松町石鎚(その他)');
 ok($zip->set_number('7991301')->is_valid_number, '愛媛県西条市三芳');
