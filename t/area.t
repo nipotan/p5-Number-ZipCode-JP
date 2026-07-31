@@ -2448,8 +2448,8 @@ ok($zip->set_number('0190403')->is_valid_number, '秋田県湯沢市宇留院内
 ok($zip->set_number('0190404')->is_valid_number, '秋田県湯沢市高松');
 ok($zip->set_number('0190481')->is_valid_number, '秋田県湯沢市皆瀬(水上沢)');
 ok($zip->set_number('0190501')->is_valid_number, '秋田県横手市十文字町腕越');
-ok($zip->set_number('0190502')->is_valid_number, '秋田県横手市十文字町西原2番町');
-ok($zip->set_number('0190503')->is_valid_number, '秋田県横手市十文字町西原1番町');
+ok($zip->set_number('0190502')->is_valid_number, '秋田県横手市十文字町西原二番町');
+ok($zip->set_number('0190503')->is_valid_number, '秋田県横手市十文字町西原一番町');
 ok($zip->set_number('0190505')->is_valid_number, '秋田県横手市十文字町仁井田');
 ok($zip->set_number('0190506')->is_valid_number, '秋田県横手市十文字町佐賀会');
 ok($zip->set_number('0190507')->is_valid_number, '秋田県横手市十文字町上鍋倉');
@@ -12551,7 +12551,7 @@ ok($zip->set_number('0861131')->is_valid_number, '北海道標津郡中標津町
 ok($zip->set_number('0861132')->is_valid_number, '北海道標津郡中標津町西12条北');
 ok($zip->set_number('0861133')->is_valid_number, '北海道標津郡中標津町西13条北');
 ok($zip->set_number('0861134')->is_valid_number, '北海道標津郡中標津町西14条北');
-ok($zip->set_number('0861135')->is_valid_number, '北海道標津郡中標津町旭ケ丘');
+ok($zip->set_number('0861135')->is_valid_number, '北海道標津郡中標津町旭ヶ丘');
 ok($zip->set_number('0861136')->is_valid_number, '北海道標津郡中標津町協和');
 ok($zip->set_number('0861137')->is_valid_number, '北海道標津郡中標津町俵橋');
 ok($zip->set_number('0861139')->is_valid_number, '北海道標津郡中標津町豊岡');
@@ -12562,12 +12562,12 @@ ok($zip->set_number('0861144')->is_valid_number, '北海道標津郡中標津町
 ok($zip->set_number('0861145')->is_valid_number, '北海道標津郡中標津町北中');
 ok($zip->set_number('0861146')->is_valid_number, '北海道標津郡中標津町南町');
 ok($zip->set_number('0861147')->is_valid_number, '北海道標津郡中標津町共立');
-ok($zip->set_number('0861148')->is_valid_number, '北海道標津郡中標津町緑ケ丘');
+ok($zip->set_number('0861148')->is_valid_number, '北海道標津郡中標津町緑ヶ丘');
 ok($zip->set_number('0861150')->is_valid_number, '北海道標津郡中標津町南中');
 ok($zip->set_number('0861151')->is_valid_number, '北海道標津郡中標津町川西');
 ok($zip->set_number('0861152')->is_valid_number, '北海道標津郡中標津町北町');
-ok($zip->set_number('0861153')->is_valid_number, '北海道標津郡中標津町桜ケ丘');
-ok($zip->set_number('0861156')->is_valid_number, '北海道標津郡中標津町並美ケ丘');
+ok($zip->set_number('0861153')->is_valid_number, '北海道標津郡中標津町桜ヶ丘');
+ok($zip->set_number('0861156')->is_valid_number, '北海道標津郡中標津町並美ヶ丘');
 ok($zip->set_number('0861157')->is_valid_number, '北海道標津郡中標津町西町');
 ok($zip->set_number('0861159')->is_valid_number, '北海道標津郡中標津町青葉台');
 ok($zip->set_number('0861160')->is_valid_number, '北海道標津郡中標津町りんどう町');
